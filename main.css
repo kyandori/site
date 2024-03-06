@@ -13,31 +13,27 @@
   --color-code--theme--dark: 19, 19, 23;
   --color-code--theme--accent: 138, 148, 115;
   /*----- site color-code -----*/
-  /*
   --color-code: var(--color-code--theme--dark);
   --color-code--reverse: var(--color-code--theme--light);
   --color-code--accent: var(--color-code--theme--accent);
-  */
-  
+  /*
   --color-code: light-dark(var(--color-code--theme--light), var(--color-code--theme--dark));
   --color-code--reverse: light-dark(var(--color-code--theme--dark), var(--color-code--theme--light));
   --color-code--accent: light-dark(var(--color-code--theme--accent), var(--color-code--theme--accent));
-  
+  */
   /*----- site color -----*/
-  /*
   --color: rgba(var(--color-code--theme--dark), 1);
   --color--reverse: rgba(var(--color-code--theme--light), 1);
   --color--accent: rgba(var(--color-code--theme--accent), 1);
   --color--outline--default: rgba(var(--color-code--reverse), 0.125);
   --color--disabled--default: rgba(var(--color-code--reverse), 0.125);
-  */
-  
+  /*
   --color: light-dark(rgba(var(--color-code--theme--light), 1), rgba(var(--color-code--theme--dark), 1));
   --color--reverse: light-dark(rgba(var(--color-code--theme--dark), 1), rgba(var(--color-code--theme--light), 1));
   --color--accent: light-dark(rgba(var(--color-code--theme--accent), 1), rgba(var(--color-code--theme--accent), 1));
   --color--outline--default: rgba(var(--color-code--reverse), 0.125);
   --color--disabled--default: rgba(var(--color-code--reverse), 0.125);
-  
+  */
   /*----- settings -----*/
   --font-family--theme: "Poppins", "M PLUS 2";
   --width--scrollbar: 2px;
