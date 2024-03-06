@@ -241,3 +241,10 @@
     }
   }
 }
+
+
+main {
+  width: 100%;
+  min-height: 100dvh;
+  background-color: red;
+}
