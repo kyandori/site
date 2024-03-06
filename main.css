@@ -22,9 +22,8 @@
   --color: rgba(var(--color-code--theme--dark), 1);
   --color--reverse: rgba(var(--color-code--theme--light), 1);
   --color--accent: rgba(var(--color-code--theme--accent), 1);
-  --color-code--outline:;
-  --color-code--hover-focus:;
-  --color-code--disabled:;
+  --color--outline--default: rgba(var(--color-code--reverse), 0.125);
+  --color--disabled--default: rgba(var(--color-code--reverse), 0.125);
 
   
   
