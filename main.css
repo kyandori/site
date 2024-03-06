@@ -243,8 +243,92 @@
 }
 
 
-main {
-  width: 100%;
-  min-height: 100dvh;
-  background-color: red;
+    container-type: inline-size;
+    container-name: li;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+@layer base {
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  /*----- body -----*/
+  body {
+    font-family: var(--font-family--theme);
+    width: 100%;
+    min-height: 100dvh;
+    color: var(--color--reverse);
+    background-color: var(--color);
+  }
+  /*----- main -----*/
+  main {
+    width: 100%;
+  }
+  /*----- li -----*/
+  li {
+    list-style: none;
+  }
+  /*----- a -----*/
+  a {
+    color: var(--color--reverse);
+    text-decoration: none;
+  }
+}
+
+@layer base-class {
+  /*----- container -----*/
+  .container {
+    /* need custom properties: --container-type */
+    /* valid custom properties: --container-name */
+    container-type: var(--container-type, normal);
+    container-name: var(--container-name, none);
+  }
+  /*----- wrap -----*/
+  .wrap {
+    display: flex;
+    gap: 0;
+    width: 100%;
+  }
+  /* component */
+  .component {
+    /* need custom properties: --container-type */
+    /* valid custom properties: --container-name */
+    display: flex;
+    gap: 0;
+    overflow: hidden;
+    container-type: var(--container-type, normal);
+    container-name: var(--container-name, none);
+  }
+}
+
+@layer component {
+}
+
+@layer component-class {
+}
+
+@layer style {
+}
+
+@layer layout {
+}
+
+@layer extra {
+}
+
+@layer base, base-class, component,　component-class, style, layout, extra;
