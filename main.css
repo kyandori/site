@@ -2,3 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+2:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
 
+:root {
+  --debug: false;
+  container-name: root;
+  color-scheme: light dark;
+  
+  scroll-behavior: smooth;
+  /*----- theme color-code -----*/
+  --color-code--theme--light: 245, 255, 255;
+  --color-code--theme--dark: 19, 19, 23;
+  --color-code--theme--accent: 138, 148, 115;
+  /*----- site color-code -----*/
+  /*
+  --color-code: var(--color-code--theme--dark);
+  --color-code--reverse: var(--color-code--theme--light);
+  --color-code--accent: var(--color-code--theme--accent);
+  */
+  /*----- site color -----*/
+  --color: rgba(var(--color-code--theme--dark), 1);
+  --color--reverse: rgba(var(--color-code--theme--light), 1);
+  --color--accent: rgba(var(--color-code--theme--accent), 1);
+  --color-code--outline:;
+  --color-code--hover-focus:;
+  --color-code--disabled:;
+
+  
+  
+  --color-code: light-dark(var(--color-code--theme--light), var(--color-code--theme--dark));
+  --color-code--reverse: light-dark(var(--color-code--theme--dark), var(--color-code--theme--light));
+  --color-code--accent: light-dark(var(--color-code--theme--accent), var(--color-code--theme--accent));
+
+
+
+
+
+  
+  
+}
