@@ -121,3 +121,37 @@
     }
   }
 }
+
+
+/*=================================*/
+/* common items */
+/*=================================*/
+/*----- progress -----*/
+/*
+<div class="item--progress" data-scope="progress" role="none">
+</div>
+*/
+@scope (.item--progress) to ([data-scope]) {
+  
+  @keyframes progress {
+    
+    0% {
+      width: 0%;
+    }
+    
+    100% {
+      width: 100%;
+    }
+  }
+  
+  :scope {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: var(--color--accent);
+    animation: linear progress;
+    animation-timeline: scroll(root);
+  }
+}
