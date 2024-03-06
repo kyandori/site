@@ -78,3 +78,46 @@
   align-items: center !important;
   justify-content: center;
 }
+/* symbol */
+/* valid custom properties */
+/*
+--color--symbol: ;
+--font-size--content: ;
+--font-size--title: ;
+--line-height--title: ;
+*/
+.symbol:is(.material-symbols-outlined) {
+  color: var(--color--symbol, var(--color--reverse));
+  width: 100%;
+  font-size: 0 !important;
+  
+  &[data-content] {
+    &::before,
+    &[data-content-position="before"]::before,
+    &[data-content-position="after"]::after {
+      font-size: var(--font-size--content, medium);
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      aspect-ratio: 1 !important;
+      content: attr(data-content);
+      
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 300,
+        'GRAD' 0,
+        'opsz' 24;
+    }
+    
+    &[data-title] {
+      &::after,
+      &[data-content-position="before"]::after,
+      &[data-content-position="after"]::before {
+        font-size: var(--font-size--title, medium);
+        line-height: var(--line-height--title, normal);
+        content: attr(data-title);
+        font-family: var(--font-family--theme);
+      }
+    }
+  }
+}
