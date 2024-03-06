@@ -38,3 +38,18 @@
   --font-family--theme: "Poppins", "M PLUS 2";
   --width--scrollbar: 2px;
 }
+
+@container root style(--debug: true) {
+  *, *::before, *::after {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+@media (min-width: 479px) {
+  :root {
+    --width--scrollbar: 8px;
+  }
+}
+
+
