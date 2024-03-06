@@ -53,3 +53,28 @@
 }
 
 
+/*=================================*/
+/* settings */
+/*=================================*/
+/*----- scrollbar -----*/
+::-webkit-scrollbar{
+  width: var(--width--scrollbar);
+}
+::-webkit-scrollbar-track{
+  background-color: var(--color);
+}
+::-webkit-scrollbar-thumb{  
+  background-color: var(--color--accent);
+}
+
+
+/*=================================*/
+/* classes */
+/*=================================*/
+/* material-symbols-outlined */
+.material-symbols-outlined {
+  display: flex !important;
+  gap: 0 !important;
+  align-items: center !important;
+  justify-content: center;
+}
