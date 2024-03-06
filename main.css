@@ -34,11 +34,7 @@
   --color--accent: light-dark(rgba(var(--color-code--theme--accent), 1), rgba(var(--color-code--theme--accent), 1));
   --color--outline--default: rgba(var(--color-code--reverse), 0.125);
   --color--disabled--default: rgba(var(--color-code--reverse), 0.125);
-  
-
-
-
-
-  
-  
+  /*----- settings -----*/
+  --font-family--theme: "Poppins", "M PLUS 2";
+  --width--scrollbar: 2px;
 }
