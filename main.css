@@ -418,7 +418,7 @@
     & {
       .symbol:is(.material-symbols-outlined) {
         color: var(--color--icon, var(--color--accent));
-        border: 1.5cqw solid var(--color--icon, var(--color--accent));
+        border: 2.5cqw solid var(--color--icon, var(--color--accent));
         background-color: transparent;
       }
     }
