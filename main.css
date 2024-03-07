@@ -460,7 +460,7 @@
 /*
 <div class="item--check" data-scope="check">
   <label aria-label="">
-    <input type="checkbox(radio)">
+    <input type="checkbox(radio)"( name="")( disabled)>
     <span class="(symbol )material-symbols-outlined"( data-content="")( data-title="")( data-content-position="") role="img">
     </span>
     (<span>***</span>)
