@@ -637,7 +637,7 @@
           &[data-content] {
             --font-size--content: 86cqw;
             
-            border: 2cqw solid rgba(var(--color-code--reverse), 0.125);
+            border: 4cqw solid rgba(var(--color-code--reverse), 0.125);
             border-radius: var(--border-radius, 14cqw);
             
             &[data-title] {
@@ -656,7 +656,7 @@
             color: var(--color--check, var(--color--accent));
             
             &[data-content] {
-              border: 2cqw solid var(--color--check, var(--color--accent));
+              border: 4cqw solid var(--color--check, var(--color--accent));
             }
           }
         }
