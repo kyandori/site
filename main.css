@@ -313,6 +313,8 @@
       }
       .material-symbols-outlined::before {
         content: "dark_mode";
+        
+        font-variation-settings: 'FILL' 1;
       }
     }
 
