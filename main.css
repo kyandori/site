@@ -517,7 +517,7 @@
         }
         
         .material-symbols-outlined::before {
-          width: 1.425rem;
+          height: 1.425rem;
           display: flex;
           align-items: center;
           justify-content: center;
