@@ -308,7 +308,7 @@
     /* checked */
     &:has(input:checked) {
       .material-symbols-outlined {
-        border: 4cqw solid yellow;
+        border: 6cqw solid yellow;
         color: yellow;
       }
       .material-symbols-outlined::before {
