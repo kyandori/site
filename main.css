@@ -616,7 +616,7 @@
     }
   }
   
-  /* check-style:normal */
+  /* check-style:custom */
   @container style(--check-style: custom) {
     & {
       width: 100%;
