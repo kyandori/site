@@ -757,10 +757,6 @@
         /* readonly */
         &[readonly] {
           cursor: default;
-          /*visibility: hidden;*/
-          &:focus {
-            border: 2cqw solid transparent;
-          }
         }
         
         /* focus */
