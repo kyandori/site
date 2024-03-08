@@ -753,13 +753,20 @@
         border: 2cqw solid transparent;
         color: var(--color--reverce);
         background-color: transparent;
-        visibility: hidden;
+
+        /* readonly */
+        &[readonly] {
+          cursor: default;
+          visibility: hidden;
+          &:focus {
+            border: 2cqw solid transparent;
+          }
+        }
+        
         /* focus */
         &:focus {
           outline: none;
-          
-          /*border: 2cqw solid var(--color--accent);*/
-          cursor: default; /* case of readonly */
+          border: 2cqw solid var(--color--accent);
         }
       }
       
