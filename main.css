@@ -757,7 +757,7 @@
         /* focus */
         &:focus {
           outline: none;
-          border: 2cqw solid var(--color--accent);
+          /*border: 2cqw solid var(--color--accent);*/
         }
       }
       
