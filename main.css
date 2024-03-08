@@ -757,7 +757,9 @@
         /* focus */
         &:focus {
           outline: none;
+          
           /*border: 2cqw solid var(--color--accent);*/
+          cursor: auto; /* case of readonly */
         }
       }
       
