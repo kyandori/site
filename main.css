@@ -697,6 +697,152 @@
 
 
 
+
+/*
+*****input-number*****
+<div class="item--field" data-scope="field">
+  <button class="number--up" aria-label="up">
+    <span class="material-symbols-outlined"></span>
+  </button>
+  <input id="" type="number" inputmode="numeric" max="" min="" step="" aria-label="">
+  <button class="number--down" aria-label="down" disabled>
+    <span class="material-symbols-outlined"></span>
+  </button>
+  <span></span>
+  <button class="number--clear" aria-label="clear" disabled>
+    <span class="material-symbols-outlined"></span>
+  </button>
+</div>
+*/
+/* ▼container-style▼ */
+/*
+--field-style: ; [custom]
+*/
+/* valid custom properties */
+/*
+*/
+/*@scope (.item--field:has(input[type="number"])) to ([data-scope]) {*/
+@scope (.item--field) to ([data-scope]) {
+  :scope {
+    container-type: inline-size;
+    container-name: field--number;
+  }
+  
+  /* field-style:custom */
+  @container style(--field-style: custom) {
+    /*& {*/
+    &:has(input[type="number"]) {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-self: flex-start;
+      align-items: center;
+      justify-content: center;
+      width: auto;
+      height: auto;
+      overflow: hidden;
+      
+      :is(input[type="number"]) {
+        width: 96cqw;
+        height: 72cqw;
+        font-size: 56cqw;
+        text-align: center;
+        border-radius: 4cqw;
+        margin: 4cqw 0;
+        padding: 0;
+        border: 2cqw solid transparent;
+        color: var(--color--reverce);
+        background-color: transparent;
+        
+        /* focus */
+        &:focus {
+          outline: none;
+          border: 2cqw solid var(--color--accent);
+        }
+      }
+      
+      :is(button) {
+        background-color: transparent;
+        border-radius: 3cqw;
+        overflow: hidden;
+        cursor: pointer;
+        
+        .material-symbols-outlined::before {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 72cqw;
+          height: 40.98cqw;
+        }
+        
+        &.number--up {
+          margin-top: 2cqw;
+          
+          .material-symbols-outlined::before {
+            content: "expand_less";
+            font-size: 69.334cqw;
+          }
+        }
+
+        &.number--down {
+          .material-symbols-outlined::before {
+            content: "expand_more";
+            font-size: 69.334cqw;
+          }
+        }
+
+        &.number--clear {
+          margin-bottom: 2cqw;
+          
+          .material-symbols-outlined::before {
+            content: "cancel";
+            font-size: 37.334cqw;
+            font-variation-settings: 'FILL' 1;
+          }
+        }
+        
+        /* disabled */
+        &:disabled {
+          cursor: auto !important;
+          background-color: transparent !important;
+          
+          .material-symbols-outlined::before {
+            color: rgba(var(--color-code--reverse), 0.125) !important;
+          }
+        }
+      }
+      
+      :is(span:not(.material-symbols-outlined)) {
+        font-size: 21.334cqw;
+        user-select: none;
+        &::selection,
+        &::-moz-selection {
+          background: none;
+        }
+      }
+      
+      /* disabled */
+      &:has(input[type="number"]:disabled) {
+        
+        :is(button) {
+          cursor: auto !important;
+        
+          .material-symbols-outlined::before {
+            color: rgba(var(--color-code--reverse), 0.125) !important;
+          }
+        }
+        :is(span:not(.material-symbols-outlined)) {
+          color: rgba(var(--color-code--reverse), 0.125) !important;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
 @layer base {
   *, *::before, *::after {
     margin: 0;
