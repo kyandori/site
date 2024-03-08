@@ -704,7 +704,7 @@
   <button class="number--up" aria-label="up">
     <span class="material-symbols-outlined"></span>
   </button>
-  <input id="" type="number" inputmode="numeric" max="" min="" step="" aria-label=""( readonly)>
+  <input id="" type="number" inputmode="numeric" max="" min="" step="" aria-label=""( tabindex="-1" readonly)>
   <button class="number--down" aria-label="down" disabled>
     <span class="material-symbols-outlined"></span>
   </button>
