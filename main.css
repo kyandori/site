@@ -753,7 +753,7 @@
         border: 2cqw solid transparent;
         color: var(--color--reverce);
         background-color: transparent;
-        
+        visibility: hidden;
         /* focus */
         &:focus {
           outline: none;
